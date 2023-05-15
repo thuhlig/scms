@@ -1,0 +1,11 @@
+POST localhost:8080/customers
+Content-Type: application/json
+
+{
+  "firstName":  "Jorge",
+  "lastName": "Gomez",
+  "mobil":  null,
+  "address": null,
+  "email":  null,
+  "internalCode": null
+}
