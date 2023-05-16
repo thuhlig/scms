@@ -11,6 +11,7 @@ For further reference, please consider the following sections:
 * [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/3.0.6/reference/htmlsingle/#using.devtools)
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/3.0.6/reference/htmlsingle/#actuator)
 * [Spring Boot Security](https://spring.io/guides/gs/securing-web/)
+* [Spring Boot Security - H2 path permissions](https://www.appsdeveloperblog.com/add-h2-database-to-spring-boot-project-with-spring-security/)
 
 ### Guides
 The following guides illustrate how to use some features concretely:
