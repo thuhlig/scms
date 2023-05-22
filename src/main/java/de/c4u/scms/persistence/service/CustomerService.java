@@ -14,9 +14,9 @@ public interface CustomerService {
 
     List<CustomerProjection> getAllAsProjection();
 
-    Optional<Customer> getOneById(@PathVariable Integer id);
+    Optional<Customer> getOneById(@PathVariable Long id);
 
     Customer create(@RequestBody CustomerRequest data);
 
-    void delete(@PathVariable Integer id);
+    void delete(@PathVariable Long id);
 }

@@ -27,7 +27,7 @@ public class CustomerController {
     }
 
     @GetMapping("/{id}")
-    public Customer getOneById(@PathVariable Integer id) {
+    public Customer getOneById(@PathVariable Long id) {
         return this.customerService.getOneById(id).orElseThrow();
     }
 
@@ -37,7 +37,7 @@ public class CustomerController {
     }
 
     @DeleteMapping("/{id}")
-    public void delete(@PathVariable Integer id) {
+    public void delete(@PathVariable Long id) {
         this.customerService.delete(id);
     }
 }

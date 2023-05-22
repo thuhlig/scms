@@ -24,7 +24,7 @@ public class CustomerServiceImpl implements CustomerService {
         return this.customerRepository.getAllAsProjection();
     }
 
-    public Optional<Customer> getOneById(Integer id) {
+    public Optional<Customer> getOneById(Long id) {
         return this.customerRepository.findById(id);
     }
 
@@ -40,7 +40,7 @@ public class CustomerServiceImpl implements CustomerService {
         return this.customerRepository.save(customer);
     }
 
-    public void delete(Integer id) {
+    public void delete(Long id) {
         this.customerRepository.deleteById(id);
     }
 }

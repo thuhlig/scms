@@ -1,8 +1,7 @@
 package de.c4u.scms.persistence.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,13 +10,11 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "users")
-public class User {
+public class User extends AbstractEntity {
 
-    @Id
-    @GeneratedValue
-    private Integer id;
-
+    @Column(name = "username", length = 20, unique = true, nullable = false)
     private String username;
 
+    @Column(name = "password", length = 100, nullable = false)
     private String password;
 }

@@ -19,6 +19,9 @@ public class DummyDataLoader implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) {
+        if (!this.userService.getALl().isEmpty())
+            return;
+
         this.userService.create("user1", "password1");
 
         for (int i = 0; i < 50; i++) {
@@ -29,7 +32,7 @@ public class DummyDataLoader implements ApplicationRunner {
                     f.name().lastName(),
                     f.phoneNumber().cellPhone(),
                     f.address().fullAddress(),
-                    null,
+                    "foo@bar.com",
                     null);
 
             this.customerService.create(data);
